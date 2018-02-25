@@ -83,6 +83,12 @@ class install_r {
 
 # install rstudio and start service
 class install_rstudio_server {
+    # Remove existing .deb for cleaner re-install
+    exec {'rstudio-server-remove-deb':
+        provider => shell,
+        command => "rm -f ${rstudioserver}",
+    }
+    ->
     # Download rstudio server
     wget::fetch {'rstudio-server-download':
         require  => Package['r-base'],
