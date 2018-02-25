@@ -11,15 +11,15 @@ This is meant to run on almost any system. However, you will need a substantial 
 3. Clone this repository
 4. Open a terminal and change folders into repository.
 5. `vagrant box add ubuntu/xenial64`
-6. `vagrant up` (this takes a while if doing it for the first time)
+6. `vagrant up` (this takes a while if doing it for the first time) until finished. You should see e.g. `==> default: Notice: Finished catalog run in 123.45 seconds`
 7. Open web browser: http://localhost:8787, username: `vagrant` password: `vagrant`
 8. Shared files live in the `/vagrant` folder (next to the `Vagrantfile` where you cloned this repo)
 
 ## Run
 
-1. Download support files from [Sharepoint](https://www.pepfar.net/Project-Pages/collab-38/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2FProject-Pages%2Fcollab-38%2FShared%20Documents%2FCOP18%20Target%20Setting%20Process%20Improvement%2FImport%20Team&FolderCTID=0x012000C4AC9B35DC4AB84FAEEF47AE703A28CE00C799CA85D140EF45960B9C47CE99E19F&View=%7BA8BAC8D0-846B-4EFE-8763-758855081F5D%7D&InitialTabId=Ribbon%2EDocument&VisibilityContext=WSSTabPersistence#InplviewHasha8bac8d0-846b-4efe-8763-758855081f5d=RootFolder%3D%252FProject%252DPages%252Fcollab%252D38%252FShared%2520Documents%252FCOP18%2520Target%2520Setting%2520Process%2520Improvement%252FImport%2520Team) and place it into `/path/to/repo/vagrant/support_files`
+1. Download support files from [Sharepoint](https://www.pepfar.net/Project-Pages/collab-38/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2FProject-Pages%2Fcollab-38%2FShared%20Documents%2FCOP18%20Target%20Setting%20Process%20Improvement%2FImport%20Team&FolderCTID=0x012000C4AC9B35DC4AB84FAEEF47AE703A28CE00C799CA85D140EF45960B9C47CE99E19F&View=%7BA8BAC8D0-846B-4EFE-8763-758855081F5D%7D&InitialTabId=Ribbon%2EDocument&VisibilityContext=WSSTabPersistence#InplviewHasha8bac8d0-846b-4efe-8763-758855081f5d=RootFolder%3D%252FProject%252DPages%252Fcollab%252D38%252FShared%2520Documents%252FCOP18%2520Target%2520Setting%2520Process%2520Improvement%252FImport%2520Team) and place it into `/path/to/repo/vagrant/support_files/`
 
-2. Download DisaggTool from Support Ticket and put it into `/path/to/repo/vagrant/disagg_tools/`
+2. Download DisaggTool spreadsheets from Support Ticket and put it into `/path/to/repo/vagrant/disagg_tools/`
 
 3. Adjust `distribution_year` to either `2017` or `2018`. This should be indicated in the Support Ticket.
 
