@@ -1,6 +1,8 @@
 ### Vagrant
 
-Vagrant isolates all requirements into a Virtual Machine (Ubuntu). The "host" is your local computer while the "guest" is a isolated VM. Shared documents can only be transferred via the `/vagrant` folder in your repository.
+Installer for [data-pack-importer](https://github.com/jason-p-pickering/data-pack-importer)
+
+Vagrant isolates all dependencies and requirements into a Virtual Machine (Ubuntu 16.04). The "host" is your local computer while the "guest" is a isolated VM. Shared documents can only be transferred via the `/vagrant` folder in your repository.
 
 This is meant to run on almost any system. However, you will need a substantial amount of RAM (4 GB) and disk space (5 GB).
 
@@ -43,4 +45,4 @@ psnu_data<-ImportSheets(wb,
 ### Other
 
 - To stop vagrant: `vagrant halt` in the host machine
-- To update vagrant with code changes from the `data-pack-importer` repository, call either: `install_github(repo="jason-p-pickering/data-pack-importer", branch="production")` in the R console, or run `vagrant up --provision` from the host machine.
+- To update vagrant with code changes from the `data-pack-importer` repository, call either: `install_github(repo="jason-p-pickering/data-pack-importer", branch="prod")` in the R console, or run `vagrant up --provision` from the host machine.
