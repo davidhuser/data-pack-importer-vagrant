@@ -1,0 +1,12 @@
+.DS_Store
+
+.vagrant
+ubuntu-xenial-*.log
+*.box
+!*.gitkeep
+disagg_tools/*.xls*
+support_files/*.xlsx
+support_files/*.json
+support_files/*.rds
+support_files/*.csv
+support_files/*.rda
