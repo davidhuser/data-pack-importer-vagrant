@@ -45,4 +45,4 @@ psnu_data<-ImportSheets(wb,
 ### Other
 
 - To stop vagrant: `vagrant halt` in the host machine
-- To update vagrant with code changes from the `data-pack-importer` repository, call either: `install_github(repo="jason-p-pickering/data-pack-importer", branch="prod")` in the R console, or run `vagrant up --provision` from the host machine.
+- To update vagrant with code changes from the `data-pack-importer` repository, call either: `install_github(repo="jason-p-pickering/data-pack-importer", ref="prod")` in the R console, or run `vagrant up --provision` from the host machine.
