@@ -8,12 +8,13 @@ This is meant to run on almost any system. However, you will need a substantial 
 
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 2. Install [Vagrant](https://www.vagrantup.com/downloads).
-3. Clone this repository
-4. Open a terminal and change folders into repository.
-5. `vagrant box add ubuntu/xenial64`
-6. `vagrant up` (this takes a while if doing it for the first time) until finished. You should see e.g. `==> default: Notice: Finished catalog run in 123.45 seconds`
-7. Open web browser: http://localhost:8787, username: `vagrant` password: `vagrant`
-8. Shared files live in the `/vagrant` folder (next to the `Vagrantfile` where you cloned this repo)
+3. If you're on Windows 7, [update Powershell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell) to v4 ([ref](https://github.com/hashicorp/vagrant/issues/8777))
+4. Clone this repository
+5. Open a terminal and change into repository i.e. with `cd /path/to/repo`
+6. In the terminal: `vagrant box add ubuntu/xenial64`
+7. In the terminal: `vagrant up` (this takes a while if doing it for the first time) until finished. Eventually you should see e.g. `==> default: Notice: Finished catalog run in 123.45 seconds`
+8. Open web browser: http://localhost:8787, username: `vagrant` password: `vagrant`
+9. Shared files live in the `/vagrant` folder (next to the `Vagrantfile` where you cloned this repo)
 
 ## Run
 
@@ -44,5 +45,7 @@ psnu_data<-ImportSheets(wb,
 
 ### Other
 
+- Check status: `vagrant status`
 - To stop vagrant: `vagrant halt` in the host machine
 - To update vagrant with code changes from the `data-pack-importer` repository, call either: `install_github(repo="jason-p-pickering/data-pack-importer", ref="prod")` in the R console, or run `vagrant up --provision` from the host machine.
+- If you experience that Vagrant takes a lot of CPU, you can change it in the `Vagrantfile` before calling `vagrant up` and set it to `v.cpus = 1` and maybe also `v.memory = 2048`
