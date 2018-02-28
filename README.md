@@ -2,9 +2,9 @@
 
 Installer for [data-pack-importer](https://github.com/jason-p-pickering/data-pack-importer)
 
-Vagrant isolates all dependencies and requirements into a Virtual Machine (Ubuntu 16.04). The "host" is your local computer while the "guest" is a isolated VM. Shared documents can only be transferred via the `/vagrant` folder in your repository.
+Vagrant isolates all dependencies and requirements into a Virtual Machine (Ubuntu 16.04). The "host" is your local computer while the "guest" is a isolated VM. 
 
-This is meant to run on almost any system. However, you will need a substantial amount of RAM (4 GB) and disk space (5 GB).
+This is meant to run on almost any system. However, you will need a substantial amount of RAM (4 GB) and disk space (5 GB) - if you're on a slow computer (i.e. only 4GB RAM), see [chapter "Other"](#Other) for details.
 
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 2. Install [Vagrant](https://www.vagrantup.com/downloads).
