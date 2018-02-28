@@ -49,3 +49,5 @@ psnu_data<-ImportSheets(wb,
 - To stop vagrant: `vagrant halt` in the host machine
 - To update vagrant with code changes from the `data-pack-importer` repository, call either: `install_github(repo="jason-p-pickering/data-pack-importer", ref="prod")` in the R console, or run `vagrant up --provision` from the host machine.
 - If you experience that Vagrant takes a lot of CPU, you can change it in the `Vagrantfile` before calling `vagrant up` and set it to `v.cpus = 1` and maybe also `v.memory = 2048`
+- To SSH into the guest machine, use `vagrant ssh`
+- To see history of RStudio commands, ssh into the machine and open the file e.g. with `less ~/.rstudio/history_database`
