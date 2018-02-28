@@ -24,7 +24,7 @@ This is meant to run on almost any system. However, you will need a substantial 
 
 3. Adjust `distribution_year` to either `2017` or `2018`. This should be indicated in the Support Ticket.
 
-4. Paste it into the RStudio console in http://localhost:8787. If successful, it outputs a Excel file in the `vagrant` folder.
+4. Paste it into the RStudio console in http://localhost:8787. If successful, it outputs a Excel file in the `disagg_tools` folder.
 
 
 ```R
