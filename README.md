@@ -9,7 +9,7 @@ This is meant to run on almost any system. However, you will need a substantial 
 ### Installation
 
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-2. Install [Vagrant](https://www.vagrantup.com/downloads).
+2. Install [Vagrant](https://www.vagrantup.com/downloads.html).
 3. If you're on Windows 7, [update Powershell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell) to v4 ([ref](https://github.com/hashicorp/vagrant/issues/8777))
 4. Clone this repository
 5. Open a terminal and change into repository i.e. with `cd /path/to/repo`
