@@ -1,6 +1,6 @@
 {
   "dhis": {
-    "baseurl": "http://dev-de.datim.org/",
+    "baseurl": "https://dev-de.datim.org/",
     "username": "admin",
     "password": "district"
   }
